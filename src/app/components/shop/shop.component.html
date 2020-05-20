@@ -1,0 +1,40 @@
+<div class="container" fxLayout="column wrap" fxLayoutAlign="flex-start stretch">
+    <style>
+        
+    </style>
+     <div class="filters" fxLayout="column wrap" fxLayoutAlign="flex-end center" fxLayoutGap="30px">
+        <h3>filter your search</h3>
+        <div class="filter-forms" fxLayout="row nowrap" fxLayoutAlign="space-around center">
+            <div class="dropdown animate__animated animate__fadeInLeft animate__delay-1s">
+                <h4>Location</h4>
+                <select (change)="changeLocation($event.target.value)">
+                    <option value="All">All</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Noida">Noida</option>
+                    <option value="Gurgaon">Gurgaon</option>
+                </select>
+            </div>
+            <div class="dropdown animate__animated animate__fadeInRight animate__delay-1s">
+                <h4>Cuisine</h4>
+                <select (change)="changeCuisine($event.target.value)">
+                    <option value="All">All</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Continental">Continental</option>
+                    <option value="Multi-Cuisine">Multi-Cuisine</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="restaurant-cards" fxLayout="row wrap" fxLayoutAlign="space-around space-around">
+        <h3>Restaurants</h3>
+        <div class="cards animate__animated animate__fadeInUp animate__delay-1s" *ngFor="let restaurant of filteredRestaurants" fxLayout="column wrap">
+            <div>
+                <img src="{{restaurant.image}}" alt="">
+            </div>
+            <div class="cuisine">{{ restaurant.type }}</div>
+            <div class="name" (click)="goToRestaurant(restaurant)">{{ restaurant.name }}</div>
+            <div class="location">{{ restaurant.location }}</div>
+            <div class="contact">{{ restaurant.contact }}</div>
+        </div>
+    </div>
+</div>

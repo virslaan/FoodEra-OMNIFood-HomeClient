@@ -1,0 +1,81 @@
+<div class="container" fxLayout="column wrap">
+    
+    
+    <div class="donate-header" fxLayout="row nowrap" fxLayoutAlign="space-evenly flex-end">
+        <h3 class="animate__animated animate__fadeIn animate__delay-1s">Help us feed the needy</h3>
+    </div>
+
+    <div class="billing-info borderless animate__animated animate__fadeIn animate__delay-1s" fxLayout="row wrap" fxLayoutAlign="flex-start flex-start">
+        <h3>You can help by donating food</h3>
+        <h5>fill this form and we will come pick up the food</h5>
+    </div>
+
+    <div class="billing-info animate__animated animate__fadeIn animate__delay-1s" fxLayout="row wrap" fxLayoutAlign="flex-start flex-start">
+        <div fxFlex="0 1 100%">
+            <h4>Pick-Up Info</h4>
+        </div>
+        <div>
+            <form [formGroup]="registerForm">
+                <div class="form-group" fxLayout="row wrap" fxLayoutAlign="center center">
+                    <label fxFlex="0 1 20%">Name</label>
+                    <input fxFlex="0 1 40%" type="text" formControlName="helper" />
+                    <span fxFlex="0 1 20%"></span>
+                    <span fxFlex="0 1 40%" fxFlexAlign="flex-end" *ngIf="submitted && f.helper.errors" class="invalid-feedback">
+                        <span *ngIf="f.helper.errors.required" class="alert">Name is required</span>
+                    </span>
+                </div>
+                <div class="form-group" fxLayout="row wrap" fxLayoutAlign="center center">
+                    <label fxFlex="0 1 20%">Email</label>
+                    <input fxFlex="0 1 40%" type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                    <span fxFlex="0 1 20%"></span>
+                    <span fxFlex="0 1 40%" *ngIf="submitted && f.email.errors">
+                        <span *ngIf="f.email.errors.required" class="alert">Email is required</span>
+                        <span *ngIf="f.email.errors.email" class="alert">Email must be a valid email address</span>
+                    </span>
+                </div>
+                <div class="form-group" fxLayout="row wrap" fxLayoutAlign="center center">
+                    <label fxFlex="0 1 20%">Address</label>
+                    <input fxFlex="0 1 40%" type="text" formControlName="location"/>
+                    <span fxFlex="0 1 20%"></span>
+                    <span fxFlex="0 1 40%" fxFlexAlign="flex-end" *ngIf="submitted && f.location.errors" class="invalid-feedback">
+                        <span *ngIf="f.location.errors.required" class="alert">Address is required</span>
+                    </span>
+                </div>
+                <div class="form-group" fxLayout="row wrap" fxLayoutAlign="center center">
+                    <label fxFlex="0 1 20%">Contact</label>
+                    <input fxFlex="0 1 40%" type="number" formControlName="contact" class="form-control"/>
+                    <span fxFlex="0 1 20%"></span>
+                    <span fxFlex="0 1 40%" *ngIf="submitted && f.contact.errors">
+                        <span *ngIf="f.contact.errors.required" class="alert">Contact is required</span>
+                        <span *ngIf="f.contact.errors.min" class="alert">Needs to be 10 digit long</span>
+                        <span *ngIf="f.contact.errors.max" class="alert">Needs to be 10 digit long</span>
+                    </span>
+                </div>
+                <div class="form-group" fxLayout="row wrap" fxLayoutAlign="center center">
+                    <label fxFlex="0 1 20%">Desc.</label>
+                    <input fxFlex="0 1 40%" type="text" formControlName="description" placeholder="(optional)"/>
+                    <span fxFlex="0 1 20%"></span>
+                    <span fxFlex="0 1 40%" fxFlexAlign="flex-end"></span>
+                </div>
+            </form>
+        </div>
+        <div fxFlex="0 1 100%" style="text-align: center;">
+            <button (click)="onSubmit(registerForm)">Confirm Pick-Up</button>
+        </div>
+    </div>
+
+    <div class="billing-info borderless animate__animated animate__fadeIn animate__delay-1s" fxLayout="row wrap" fxLayoutAlign="flex-start flex-start">
+        <h3>or You can help by volunteering at these centers</h3>
+    </div>
+
+    <div class="cards-container" fxLayout="row wrap" fxLayoutAlign="space-around space-around">
+        <div class="cards animate__animated animate__fadeInUp animate__delay-1s" *ngFor="let shelter of shelters" fxLayout="column wrap">
+            <div>
+                <img [src]="shelter.image" alt="">
+            </div>
+            <div class="name">{{ shelter.name }}</div>
+            <div class="location">{{ shelter.location }}</div>
+            <div class="contact">{{ shelter.contact }}</div>
+        </div>
+    </div>
+</div>

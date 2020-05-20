@@ -1,0 +1,524 @@
+[
+	{
+		"id": 1,
+		"name": "Odeon Restaurant",
+		"type": "Multi-Cuisine",
+		"location": "Delhi",
+		"contact": "+91-9898808098",
+		"accessed": 121,
+		"available": "True",
+		"image": "../../assets/img/1.jpg",
+		"dishes": [
+			{
+				"id": 2,
+				"name": "Odeon Restaurant",
+				"dishName": "Shahi Paneer",
+				"isAdded": false,
+				"dishImage": "../../assets/img/4.jpg",
+				"cost": 240,
+				"suggestion": "Best with naan"
+			},
+			{
+				"id": 3,
+				"name": "Odeon Restaurant",
+				"dishName": "Lachha Paratha",
+				"dishImage": "../../assets/img/5.jpg",
+				"cost": 80,
+				"isAdded": false,
+				"suggestion": "Best with Paneer Dishes"
+			},
+			{
+				"id": 4,
+				"name": "Odeon Restaurant",
+				"dishName": "Chowmein",
+				"dishImage": "../../assets/img/6.jpg",
+				"cost": 180,
+				"isAdded": false,
+				"suggestion": ""
+			},
+			{
+				"id": 6,
+				"name": "Restaurant 2",
+				"dishName": "Chilly Paneer",
+				"dishImage": "../../assets/img/7.jpg",
+				"cost": 240,
+				"isAdded": false,
+				"suggestion": "Best with hakka noodles"
+			},
+			{
+				"id": 7,
+				"name": "Restaurant 2",
+				"dishName": "Hakka Noodles",
+				"dishImage": "../../assets/img/7.jpg",
+				"cost": 180,
+				"isAdded": false,
+                "suggestion": "Best with Paneer Delicacy"
+			},
+			{
+				"id": 9,
+				"name": "Restaurant 3",
+				"dishName": "Italy Pizza",
+				"dishImage": "../../assets/img/8.jpg",
+				"cost": 240,
+				"isAdded": false,
+				"suggestion": ""
+			},
+			{
+				"id": 10,
+				"name": "Restaurant 3",
+				"dishName": "Alfredo Pasta",
+				"dishImage": "../../assets/img/8.jpg",
+				"cost": 350,
+				"isAdded": false,
+				"suggestion": "You might white Sauce"
+			},
+			{
+				"id": 11,
+				"name": "Restaurant 3",
+				"dishName": "Chidar Pasta",
+				"dishImage": "../../assets/img/8.jpg",
+				"cost": 180,
+				"isAdded": false,
+				"suggestion": ""
+			}
+		]
+	},
+	{
+		"id": 5,
+		"name": "Restaurant 2",
+		"type": "Chinese",
+		"location": "Delhi",
+		"contact": "+91-900000000",
+		"accessed": 127,
+		"available": "True",
+	    "image": "../../assets/img/2.jpg",
+		"dishes": [
+			{
+				"id": 6,
+				"name": "Restaurant 2",
+				"dishName": "Chilly Paneer",
+				"dishImage": "../../assets/img/7.jpg",
+				"cost": 240,
+				"isAdded": false,
+				"suggestion": "Best with hakka noodles"
+			},
+			{
+				"id": 7,
+				"name": "Restaurant 2",
+				"dishName": "Hakka Noodles",
+				"dishImage": "../../assets/img/7.jpg",
+				"cost": 180,
+				"isAdded": false,
+                "suggestion": "Best with Paneer Delicacy"
+			}
+		]
+	},
+	{
+		"id": 8,
+		"name": "Restaurant 3",
+		"type": "Continental",
+		"location": "Delhi",
+		"contact": "+91-9898808098",
+		"accessed": 11,
+		"available": "True",
+		"image": "../../assets/img/3.jpg",
+		"dishes": [
+			{
+				"id": 9,
+				"name": "Restaurant 3",
+				"dishName": "Italy Pizza",
+				"dishImage": "../../assets/img/8.jpg",
+				"cost": 240,
+				"isAdded": false,
+				"suggestion": ""
+			},
+			{
+				"id": 10,
+				"name": "Restaurant 3",
+				"dishName": "Alfredo Pasta",
+				"dishImage": "../../assets/img/8.jpg",
+				"cost": 350,
+				"isAdded": false,
+				"suggestion": "You might white Sauce"
+			},
+			{
+				"id": 11,
+				"name": "Restaurant 3",
+				"dishName": "Chidar Pasta",
+				"dishImage": "../../assets/img/8.jpg",
+				"cost": 180,
+				"isAdded": false,
+				"suggestion": ""
+			}
+		]
+	},
+	{
+		"id": 1,
+		"name": "Odeon Restaurant",
+		"type": "Multi-Cuisine",
+		"location": "Delhi",
+		"contact": "+91-9898808098",
+		"accessed": 121,
+		"available": "True",
+		"image": "../../assets/img/1.jpg",
+		"dishes": [
+			{
+				"id": 2,
+				"name": "Odeon Restaurant",
+				"dishName": "Shahi Paneer",
+				"dishImage": "../../assets/img/4.jpg",
+				"cost": 240,
+				"isAdded": false,
+				"suggestion": "Best with naan"
+			},
+			{
+				"id": 3,
+				"name": "Odeon Restaurant",
+				"dishName": "Lachha Paratha",
+				"dishImage": "../../assets/img/5.jpg",
+				"cost": 80,
+				"isAdded": false,
+				"suggestion": "Best with Paneer Dishes"
+			},
+			{
+				"id": 4,
+				"name": "Odeon Restaurant",
+				"dishName": "Chowmein",
+				"dishImage": "../../assets/img/6.jpg",
+				"cost": 180,
+				"isAdded": false,
+				"suggestion": ""
+			}
+		]
+	},
+	{
+		"id": 5,
+		"name": "Restaurant 2",
+		"type": "Chinese",
+		"location": "Delhi",
+		"contact": "+91-900000000",
+		"accessed": 127,
+		"available": "True",
+	    "image": "../../assets/img/2.jpg",
+		"dishes": [
+			{
+				"id": 6,
+				"name": "Restaurant 2",
+				"dishName": "Chilly Paneer",
+				"dishImage": "../../assets/img/7.jpg",
+				"cost": 240,
+				"isAdded": false,
+				"suggestion": "Best with hakka noodles"
+			},
+			{
+				"id": 7,
+				"name": "Restaurant 2",
+				"dishName": "Hakka Noodles",
+				"dishImage": "../../assets/img/7.jpg",
+				"cost": 180,
+				"isAdded": false,
+                "suggestion": "Best with Paneer Delicacy"
+			}
+		]
+	},
+	{
+		"id": 8,
+		"name": "Restaurant 3",
+		"type": "Continental",
+		"location": "Delhi",
+		"contact": "+91-9898808098",
+		"accessed": 11,
+		"available": "True",
+		"image": "../../assets/img/3.jpg",
+		"dishes": [
+			{
+				"id": 9,
+				"name": "Restaurant 3",
+				"dishName": "Italy Pizza",
+				"dishImage": "../../assets/img/8.jpg",
+				"isAdded": false,
+				"cost": 240,
+				"suggestion": ""
+			},
+			{
+				"id": 10,
+				"name": "Restaurant 3",
+				"dishName": "Alfredo Pasta",
+				"dishImage": "../../assets/img/8.jpg",
+				"cost": 350,
+				"isAdded": false,
+				"suggestion": "You might white Sauce"
+			},
+			{
+				"id": 11,
+				"name": "Restaurant 3",
+				"dishName": "Chidar Pasta",
+				"isAdded": false,
+				"dishImage": "../../assets/img/8.jpg",
+				"cost": 180,
+				"suggestion": ""
+			}
+		]
+	},
+	{
+		"id": 1,
+		"name": "Odeon Restaurant",
+		"type": "Multi-Cuisine",
+		"location": "Noida",
+		"contact": "+91-9898808098",
+		"accessed": 121,
+		"available": "True",
+		"image": "../../assets/img/1.jpg",
+		"dishes": [
+			{
+				"id": 2,
+				"name": "Odeon Restaurant",
+				"dishName": "Shahi Paneer",
+				"isAdded": false,
+				"dishImage": "../../assets/img/4.jpg",
+				"cost": 240,
+				"suggestion": "Best with naan"
+			},
+			{
+				"id": 3,
+				"name": "Odeon Restaurant",
+				"dishName": "Lachha Paratha",
+				"isAdded": false,
+				"dishImage": "../../assets/img/5.jpg",
+				"cost": 80,
+				"suggestion": "Best with Paneer Dishes"
+			},
+			{
+				"id": 4,
+				"name": "Odeon Restaurant",
+				"dishName": "Chowmein",
+				"isAdded": false,
+				"dishImage": "../../assets/img/6.jpg",
+				"cost": 180,
+				"suggestion": ""
+			},
+			{
+				"id": 6,
+				"name": "Restaurant 2",
+				"dishName": "Chilly Paneer",
+				"isAdded": false,
+				"dishImage": "../../assets/img/7.jpg",
+				"cost": 240,
+				"suggestion": "Best with hakka noodles"
+			},
+			{
+				"id": 7,
+				"name": "Restaurant 2",
+				"dishName": "Hakka Noodles",
+				"isAdded": false,
+				"dishImage": "../../assets/img/7.jpg",
+                "cost": 180,
+                "suggestion": "Best with Paneer Delicacy"
+			},
+			{
+				"id": 9,
+				"name": "Restaurant 3",
+				"dishName": "Italy Pizza",
+				"isAdded": false,
+				"dishImage": "../../assets/img/8.jpg",
+				"cost": 240,
+				"suggestion": ""
+			},
+			{
+				"id": 10,
+				"name": "Restaurant 3",
+				"dishName": "Alfredo Pasta",
+				"isAdded": false,
+				"dishImage": "../../assets/img/8.jpg",
+				"cost": 350,
+				"suggestion": "You might white Sauce"
+			},
+			{
+				"id": 11,
+				"name": "Restaurant 3",
+				"dishName": "Chidar Pasta",
+				"isAdded": false,
+				"dishImage": "../../assets/img/8.jpg",
+				"cost": 180,
+				"suggestion": ""
+			}
+		]
+	},
+	{
+		"id": 5,
+		"name": "Restaurant 2",
+		"type": "Chinese",
+		"location": "Noida",
+		"contact": "+91-900000000",
+		"accessed": 127,
+		"available": "True",
+	    "image": "../../assets/img/2.jpg",
+		"dishes": [
+			{
+				"id": 6,
+				"name": "Restaurant 2",
+				"dishName": "Chilly Paneer",
+				"isAdded": false,
+				"dishImage": "../../assets/img/7.jpg",
+				"cost": 240,
+				"suggestion": "Best with hakka noodles"
+			},
+			{
+				"id": 7,
+				"name": "Restaurant 2",
+				"dishName": "Hakka Noodles",
+				"isAdded": false,
+				"dishImage": "../../assets/img/7.jpg",
+                "cost": 180,
+                "suggestion": "Best with Paneer Delicacy"
+			}
+		]
+	},
+	{
+		"id": 8,
+		"name": "Restaurant 3",
+		"type": "Continental",
+		"location": "Noida",
+		"contact": "+91-9898808098",
+		"accessed": 11,
+		"available": "True",
+		"image": "../../assets/img/3.jpg",
+		"dishes": [
+			{
+				"id": 9,
+				"name": "Restaurant 3",
+				"dishName": "Italy Pizza",
+				"isAdded": false,
+				"dishImage": "../../assets/img/8.jpg",
+				"cost": 240,
+				"suggestion": ""
+			},
+			{
+				"id": 10,
+				"name": "Restaurant 3",
+				"dishName": "Alfredo Pasta",
+				"isAdded": false,
+				"dishImage": "../../assets/img/8.jpg",
+				"cost": 350,
+				"suggestion": "You might white Sauce"
+			},
+			{
+				"id": 11,
+				"name": "Restaurant 3",
+				"dishName": "Chidar Pasta",
+				"isAdded": false,
+				"dishImage": "../../assets/img/8.jpg",
+				"cost": 180,
+				"suggestion": ""
+			}
+		]
+	},
+	{
+		"id": 1,
+		"name": "Odeon Restaurant",
+		"type": "Multi-Cuisine",
+		"location": "Noida",
+		"contact": "+91-9898808098",
+		"accessed": 121,
+		"available": "True",
+		"image": "../../assets/img/1.jpg",
+		"dishes": [
+			{
+				"id": 2,
+				"name": "Odeon Restaurant",
+				"dishName": "Shahi Paneer",
+				"isAdded": false,
+				"dishImage": "../../assets/img/4.jpg",
+				"cost": 240,
+				"suggestion": "Best with naan"
+			},
+			{
+				"id": 3,
+				"name": "Odeon Restaurant",
+				"dishName": "Lachha Paratha",
+				"isAdded": false,
+				"dishImage": "../../assets/img/5.jpg",
+				"cost": 80,
+				"suggestion": "Best with Paneer Dishes"
+			},
+			{
+				"id": 4,
+				"name": "Odeon Restaurant",
+				"dishName": "Chowmein",
+				"isAdded": false,
+				"dishImage": "../../assets/img/6.jpg",
+				"cost": 180,
+				"suggestion": ""
+			}
+		]
+	},
+	{
+		"id": 5,
+		"name": "Restaurant 2",
+		"type": "Chinese",
+		"location": "Noida",
+		"contact": "+91-900000000",
+		"accessed": 127,
+		"available": "false",
+	    "image": "../../assets/img/2.jpg",
+		"dishes": [
+			{
+				"id": 6,
+				"name": "Restaurant 2",
+				"dishName": "Chilly Paneer",
+				"isAdded": false,
+				"dishImage": "../../assets/img/7.jpg",
+				"cost": 240,
+				"suggestion": "Best with hakka noodles"
+			},
+			{
+				"id": 7,
+				"name": "Restaurant 2",
+				"dishName": "Hakka Noodles",
+				"isAdded": false,
+				"dishImage": "../../assets/img/7.jpg",
+                "cost": 180,
+                "suggestion": "Best with Paneer Delicacy"
+			}
+		]
+	},
+	{
+		"id": 8,
+		"name": "Restaurant 3",
+		"type": "Continental",
+		"location": "Noida",
+		"contact": "+91-9898808098",
+		"accessed": 11,
+		"available": "false",
+		"image": "../../assets/img/3.jpg",
+		"dishes": [
+			{
+				"id": 9,
+				"name": "Restaurant 3",
+				"dishName": "Italy Pizza",
+				"isAdded": false,
+				"dishImage": "../../assets/img/8.jpg",
+				"cost": 240,
+				"suggestion": ""
+			},
+			{
+				"id": 10,
+				"name": "Restaurant 3",
+				"dishName": "Alfredo Pasta",
+				"isAdded": false,
+				"dishImage": "../../assets/img/8.jpg",
+				"cost": 350,
+				"suggestion": "You might white Sauce"
+			},
+			{
+				"id": 11,
+				"name": "Restaurant 3",
+				"dishName": "Chidar Pasta",
+				"isAdded": false,
+				"dishImage": "../../assets/img/8.jpg",
+				"cost": 180,
+				"suggestion": ""
+			}
+		]
+	}
+]

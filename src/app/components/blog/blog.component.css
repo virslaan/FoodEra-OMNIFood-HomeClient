@@ -1,0 +1,89 @@
+.container {
+    width: 100%;
+    padding: 0;
+    min-height: 85vh;
+}
+
+.cart-info {
+    width: 50%;
+    min-height: fit-content;
+    margin: 20vh 25%;
+    border: 2px solid #444;
+    margin-top: 35vh;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+h3 {
+    font-size: 150%;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    margin: 10vh 0;
+}
+
+h4 {
+    text-align: center;
+}
+
+input,
+textarea {
+    outline: none;
+    padding: 1%;
+    color: #444;
+    font-family: 'Josefin Sans';
+}
+
+.info-box {
+    width: 50%;
+    min-height: fit-content;
+    margin: 0 25% 15vh 25%;
+    border: 2px solid #444;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.info-box.borderless {
+    border: transparent;
+}
+
+.div-container {
+    width: 90%;
+    height: fit-content;
+    margin: 5%;
+}
+
+.div-container.small-margin {
+    margin: 2.5% 5%;
+}
+
+.div-container.bordered {
+    border: 2px solid #444;
+}
+
+.alert {
+    font-size: 40%;
+    text-transform: uppercase;
+    color: red;
+    font-weight: 400;
+}
+
+button {
+    color: #78b454;
+    border: 2px solid #78b454;
+    padding: 7.5px 15px;
+    background-color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #78b454;
+    transition: all 0.2s;
+}
+
+.add-form {
+    margin-top: 35vh;
+}

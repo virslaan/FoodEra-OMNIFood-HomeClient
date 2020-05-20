@@ -1,0 +1,239 @@
+/* .container {
+    width: 100%;
+    padding: 0;
+    min-height: 85vh;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+h3, h4, h5 {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+}
+
+h3 {
+    font-size: 150%;
+    margin: 10vh 0;
+}
+
+h4 {
+    font-size: 130%;
+}
+
+h5 {
+    font-size: 110%;
+}
+
+input {
+    outline: none;
+    padding: 1%;
+    color: #444;
+    font-family: 'Josefin Sans';
+}
+
+.donate-header {
+    width: 100%;
+    min-height: 85vh;
+    padding: 120px 50px 30px 50px;
+    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.5)), url('../../../assets/img/homeless.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right;
+    margin: 15vh 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.billing-info {
+    width: 50%;
+    min-height: fit-content;
+    margin: 0 25% 15vh 25%;
+    border: 2px solid #444;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.billing-info div {
+    width: 90%;
+    height: fit-content;
+    margin: 5%;
+}
+
+.alert {
+    font-size: 40%;
+    text-transform: uppercase;
+    color: red;
+    font-weight: 400;
+}
+
+button {
+    color: #78b454;
+    border: 2px solid #78b454;
+    padding: 7.5px 15px;
+    background-color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #78b454;
+    transition: all 0.2s;
+}
+ */
+
+
+.container {
+    width: 100%;
+    padding: 0;
+    min-height: 85vh;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+h3, h4, h5 {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+}
+
+h3 {
+    font-size: 150%;
+    margin: 10vh 0;
+}
+
+h4 {
+    font-size: 130%;
+}
+
+h5 {
+    font-size: 110%;
+}
+
+input {
+    outline: none;
+    padding: 1%;
+    color: #444;
+    font-family: 'Josefin Sans';
+}
+
+.donate-header {
+    width: 100%;
+    min-height: 85vh;
+    padding: 120px 50px 30px 50px;
+    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.5)), url('../../../assets/img/homeless.jpg');
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: right;
+    margin: 15vh 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.billing-info {
+    width: 50%;
+    min-height: fit-content;
+    margin: 0 25% 15vh 25%;
+    border: 2px solid #444;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.billing-info div {
+    width: 90%;
+    height: fit-content;
+    margin: 5%;
+}
+
+.billing-info.borderless {
+    border: transparent;
+}
+
+.alert {
+    font-size: 40%;
+    text-transform: uppercase;
+    color: red;
+    font-weight: 400;
+}
+
+button {
+    color: #78b454;
+    border: 2px solid #78b454;
+    padding: 7.5px 15px;
+    background-color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #78b454;
+    transition: all 0.2s;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.cards-container {
+    width: 80%;
+    margin: auto;
+    min-height: 30vh;
+    overflow: hidden;
+}
+
+.cards {
+    width: 40%;
+    min-height: 40%;
+    margin-top: 10vh;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    padding-bottom: 10px;
+    border: 2px solid transparent;
+    transition: border 0.2s;
+}
+
+.cards:hover {
+    border: 2px solid #888;
+}
+
+.cards div {
+    height: 7vh;
+    padding: 25px 0 0 15px;
+}
+
+.cards div:first-of-type {
+    height: 50vh;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.name {
+    font-size: 130%;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.location {
+    font-size: 90%;
+}
+
+.contact {
+    font-size: 80%;
+    color: #28b062;
+}

@@ -1,0 +1,246 @@
+.container {
+    width: 100%;
+    padding: 0;
+    min-height: 85vh;
+}
+
+h3 {
+    font-size: 150%;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    margin: 10vh 0;
+}
+
+a, a:hover {
+    text-decoration: none;
+    border: transparent;
+    outline: none;
+}
+
+.restaurant-info {
+    width: 100%;
+    min-height: 40vh;
+    padding: 120px 50px 60px 50px;
+    background-color: rgba(0,0,0,0.9);
+    margin-top: 15vh;
+}
+
+.restaurant-info img {
+    width: 30%;
+    height: auto;
+}
+
+.restaurant-info div {
+    width: 40%;
+    height: 100%;
+}
+
+.restaurant-info div p {
+    margin: 4vh 0;
+    color: #fff;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.restaurant-info div p:nth-of-type(1) {
+    text-transform: uppercase;
+    font-size: 60%;
+}
+
+.restaurant-info div p:nth-of-type(2) {
+    font-size: 200%;
+    color: #78b454;
+    font-weight: 500;
+}
+
+
+/* MAIN BODY */
+
+.main-body {
+    width: 90%;
+    margin: auto;
+    min-height: 50vh;   
+    margin-bottom: 15vh;
+    overflow: hidden;
+}
+
+.dish-cards {
+    width: 70%;
+}
+
+/* card components */
+
+.dish-cards {
+    padding-top: 15vh;
+    min-height: 30vh;
+}
+
+.dish-cards img {
+    width: 100%;
+    height: auto;
+}
+
+.cards {
+    width: 35%;
+    min-height: 30vh;
+    margin-top: 10vh;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    padding-bottom: 10px;
+    border: 2px solid transparent;
+    transition: border 0.2s;
+}
+
+.cards:hover {
+    border: 2px solid #888;
+}
+
+.cards div {
+    height: 7vh;
+    padding: 25px 0 0 15px;
+}
+
+.cards div:first-of-type {
+    height: fit-content;
+    padding: 0;
+}
+
+.name {
+    font-size: 120%;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cost {
+    font-size: 100%;
+    color: #28b062;
+}
+
+.card-btn {
+    font-size: 90%;
+    color: #28b062;
+}
+
+.card-btn:hover {
+    color: #444;
+}
+
+.cards div:nth-last-of-type(1) {
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* cart component */
+
+.cart-container {
+    width: 30%;
+    overflow: hidden;
+}
+
+.cart {
+    border: 2px solid #888;
+    width: 80%;
+    min-height: 50vh;
+    padding-bottom: 10px;
+}
+
+.cart div {
+    width: 100%;
+    margin: 5%;
+}
+
+.cart-heading h4 {
+    text-align: center;
+}
+
+.cart i  {
+    cursor: pointer;
+    margin: 5px;
+    text-align: center;
+}
+
+.cart-btn {
+    margin: 20px inherit;
+}
+
+a {
+    color: #78b454;
+    font-weight: 400;
+    border: 2px solid #78b454;
+    padding: 7.5px 15px;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #fff;
+    background-color: #78b454;
+    transition: all 0.2s;
+}
+
+/* FEEDBACK FORM */
+
+.feedback-form {
+    width: 80%;
+    margin: auto;
+    min-height: 10vh;   
+    margin-bottom: 15vh;
+    overflow: hidden;
+}
+
+input,
+textarea {
+    outline: none;
+    padding: 1%;
+    color: #444;
+    font-family: 'Josefin Sans';
+}
+
+.info-box {
+    width: 50%;
+    min-height: fit-content;
+    border: 2px solid #444;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.info-box.borderless {
+    border: transparent;
+}
+
+.div-container {
+    width: 90%;
+    height: fit-content;
+    margin: 5%;
+}
+
+.div-container.small-margin {
+    margin: 2.5% 5%;
+}
+
+.div-container.bordered {
+    border: 2px solid #444;
+}
+
+.alert {
+    font-size: 40%;
+    text-transform: uppercase;
+    color: red;
+    font-weight: 400;
+}
+
+button {
+    color: #78b454;
+    border: 2px solid #78b454;
+    padding: 7.5px 15px;
+    background-color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #78b454;
+    transition: all 0.2s;
+}

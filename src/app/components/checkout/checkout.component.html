@@ -1,0 +1,65 @@
+<div class="container" fxLayout="column wrap">
+    <div class="cart-info animate__animated animate__fadeIn animate__delay-1s" fxLayout="row wrap" fxLayoutAlign="flex-start flex-start">
+        <div class="cart-heading">
+            <h4>Your Cart</h4>
+        </div>
+        <div class="cart-dish animate__animated animate__fadeInRight animate__delay-1s" *ngFor="let dish of cart; let i = index">
+            <p fxFlex="0 1 80%">{{ dish.dishName }}</p>
+            <i fxFlex="0 1 10%">{{ quantities[i] }}</i>
+            <i fxFlex="0 1 10%" class="far fa-trash-alt fa-xs" (click)="removeFromCart(dish, i)"></i>
+        </div>
+        <div class="animate__animated animate__fadeIn animate__delay-2s" fxLayout="row nowrap" fxLayoutAlign="flex-start flex-start">
+            <div fxFlex="0 1 70%"></div>
+            <div fxFlex="0 1 30%">
+                <h4>Total Bill: {{ total }}</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="billing-info animate__animated animate__fadeIn animate__delay-1s" fxLayout="row wrap" fxLayoutAlign="flex-start flex-start">
+        <div fxFlex="0 1 100%">
+            <h4>Billing Info</h4>
+        </div>
+        <div>
+            <form [formGroup]="registerForm">
+                <div class="form-group" fxLayout="row wrap" fxLayoutAlign="center center">
+                    <label fxFlex="0 1 20%">Name</label>
+                    <input fxFlex="0 1 40%" type="text" formControlName="name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
+                    <span fxFlex="0 1 20%"></span>
+                    <span fxFlex="0 1 40%" fxFlexAlign="flex-end" *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                        <span *ngIf="f.name.errors.required" class="alert">Name is required</span>
+                    </span>
+                </div>
+                <div class="form-group" fxLayout="row wrap" fxLayoutAlign="center center">
+                    <label fxFlex="0 1 20%">Email</label>
+                    <input fxFlex="0 1 40%" type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                    <span fxFlex="0 1 20%"></span>
+                    <span fxFlex="0 1 40%" *ngIf="submitted && f.email.errors">
+                        <span *ngIf="f.email.errors.required" class="alert">Email is required</span>
+                        <span *ngIf="f.email.errors.email" class="alert">Email must be a valid email address</span>
+                    </span>
+                </div>
+                <div class="form-group" fxLayout="row wrap" fxLayoutAlign="center center">
+                    <label fxFlex="0 1 20%">Address</label>
+                    <input fxFlex="0 1 40%" type="text" formControlName="location"/>
+                    <span fxFlex="0 1 20%"></span>
+                    <span fxFlex="0 1 40%" fxFlexAlign="flex-end" *ngIf="submitted && f.location.errors" class="invalid-feedback">
+                        <span *ngIf="f.location.errors.required" class="alert">Address is required</span>
+                    </span>
+                </div>
+                <div fxLayout="row wrap" fxLayoutAlign="center center">
+                    <label fxFlex="0 1 20%">Rating</label>
+                    <input fxFlex="0 1 40%" type="number" formControlName="rating" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.rating.errors }" />
+                    <span fxFlex="0 1 20%"></span>
+                    <span fxFlex="0 1 40%" *ngIf="f.rating.errors">
+                        <span *ngIf="f.rating.errors.min" class="alert">Cannot be less than 1</span>
+                        <span *ngIf="f.rating.errors.max" class="alert">Cannot be greater than 10</span>
+                    </span>
+                </div>
+            </form>
+        </div>
+        <div fxFlex="0 1 100%" style="text-align: center;">
+            <button (click)="onSubmit(registerForm)">Place Order</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+<div class="container" fxLayout="column wrap">
+
+    <div class="info-box add-form animate__animated animate__fadeIn animate__delay-1s" fxLayout="row wrap" fxLayoutAlign="flex-start flex-start">
+        <div class="div-container" fxFlex="0 1 100%">
+            <h4>Add new post</h4>
+        </div>
+        <div fxFlex="0 1 100%">
+            <form [formGroup]="registerForm">
+                <div class="div-container" fxLayout="row wrap" fxLayoutAlign="center center">
+                    <div fxFlex="0 1 30%">Author</div>
+                    <div fxFlex="0 1 50%">{{ currentUser.username }}</div>
+                </div>
+                <div class="div-container" fxLayout="row wrap" fxLayoutAlign="center center">
+                    <div fxFlex="0 1 30%">Title</div>
+                    <input fxFlex="0 1 50%" type="text" formControlName="title">
+                </div>
+                <div class="div-container" fxLayout="row wrap" fxLayoutAlign="center center">
+                    <div fxFlex="0 1 30%">Post</div>
+                    <textarea fxFlex="0 1 50%" name="post" id="post" cols="30" rows="10" formControlName="post"></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="div-container" fxFlex="0 1 100%" style="text-align: center;">
+            <button (click)="onSubmit(registerForm)">Submit Post</button>
+        </div>
+    </div>
+
+    <div class="info-box borderless animate__animated animate__fadeIn animate__delay-1s" fxLayout="row wrap" fxLayoutAlign="flex-start flex-start">
+        <div class="div-container" fxFlex="0 1 100%">
+            <h4>Latest Posts</h4>
+        </div>
+        <div *ngFor="let post of blogPosts" fxLayout="row wrap" fxLayoutAlign="space-around space-around" class="div-container bordered animate__animated animate__fadeInDown animate__delay-1s" fxFlex="0 1 100%">
+            <div class="div-container small-margin" fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="0 1 80%">
+                <span fxFlex="0 1 30%" style="font-weight: 400;">Author</span>
+                &nbsp; 
+                <span fxFlex="0 1 60%">{{ post.name }}</span>
+            </div>
+            <div class="div-container small-margin" fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="0 1 80%">
+                <span fxFlex="0 1 30%" style="font-weight: 400;">Title</span>
+                &nbsp; 
+                <span fxFlex="0 1 60%">{{ post.comments }}</span>
+            </div>
+            <div class="div-container small-margin" fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="0 1 80%">
+                <span fxFlex="0 1 30%" style="font-weight: 400;">Post</span>
+                &nbsp; 
+                <br><br><br><br>
+                <span fxFlex="0 1 100%">{{ post.recipe }}</span>
+            </div>
+        </div>
+    </div>
+</div>

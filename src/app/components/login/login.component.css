@@ -1,0 +1,85 @@
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../../assets/img/login.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h3 {
+    font-family: 'Arizonia', cursive;
+    font-size: 300%;
+    color: #78b454;
+    margin-bottom: 30px;
+}
+
+h4 {
+  font-family: 'Arizonia', cursive;
+  font-size: 200%;
+  color: #78b454;
+  margin-bottom: 30px;
+}
+
+.box {
+    min-height: 35%;
+    min-width: 25%;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #222;
+    transition: all 1s;
+    padding-top: 3%
+}
+
+form {
+    margin:0 auto;
+    width:300px
+  }
+
+  input {
+    margin-bottom:3px;
+    padding:10px;
+    width: 100%;
+    background-color: transparent;
+    font-family: 'Josefin sans';
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #444;
+  }
+
+  button {
+    padding:10px;
+    margin: 20px;
+    margin-left: 0;
+    outline: none;
+    border: 1px solid #78b454;
+    background-color: transparent;
+    color: #78b454;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Josefin sans';
+    transition: all 0.2s; 
+  }
+  button:hover {
+      background-color: #78b454;
+      color: #fff;
+  }
+
+  label {
+    cursor:pointer;
+    font-size: 60%;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+  }
+  #form-switch {
+    display:none
+  }
+  #register-form {
+    display:none
+  }
+  #form-switch:checked~#register-form {
+    display:block
+  }
+  #form-switch:checked~#login-form {
+    display:none
+  }

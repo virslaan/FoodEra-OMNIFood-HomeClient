@@ -1,0 +1,91 @@
+<div class="container" fxLayout="column wrap">
+    <style>
+        .container{
+            background-image: url();
+            background-size: cover;
+            backdrop-filter: blur(5px);
+            ;
+       }
+    </style>
+    
+    <div class="restaurant-info" fxLayout="row nowrap" fxLayoutAlign="space-evenly center">
+        <img [src]="selectedRestaurant.image" alt="">
+        <div>
+            <p>{{ selectedRestaurant.type }}</p>
+            <p>{{ selectedRestaurant.name }}</p>
+            <p>{{ selectedRestaurant.location }}</p>
+            <p>{{ selectedRestaurant.contact }}</p>
+        </div>
+    </div>
+    <div class="main-body" fxLayout="row nowrap">
+        <div class="dish-cards" fxLayout="row wrap" fxLayoutAlign="space-evenly space-evenly">
+            <h3>Dishes we offer...</h3>
+            <div class="cards animate__animated animate__fadeInUp animate__delay-1s" *ngFor="let dish of selectedRestaurant.dishes" fxLayout="column wrap">
+                <div>
+                    <img [src]="dish.dishImage" alt="">
+                </div>
+                <div class="name">{{ dish.dishName }}</div>
+                <div class="cost"><i class="fas fa-rupee-sign"></i> {{ dish.cost }} / per serving</div>
+                <div *ngIf="!dish.isAdded" class="card-btn animate__animated animate__fadeInDown" (click)="addOrRemoveFromCart(dish)">Add to cart</div>
+                <div *ngIf="dish.isAdded" class="card-btn animate__animated animate__fadeInDown" (click)="addOrRemoveFromCart(dish)">Remove from cart</div>
+            </div>
+        </div>
+        <div class="cart-container" fxLayout="row wrap" fxLayoutAlign="center center">
+            <div class="cart animate__animated animate__fadeIn animate__delay-1s" fxLayout="row wrap" fxLayoutAlign="flex-start flex-start">
+                <div class="cart-heading">
+                    <h4>Your Cart</h4>
+                </div>
+                <div class="cart-dish animate__animated animate__fadeInRight animate__delay-1s" *ngFor="let dish of cart; let i = index">
+                    <p fxFlex="0 1 80%">{{ dish.dishName }}</p>
+                    <i fxFlex="0 1 5%" class="far fa-trash-alt fa-xs" (click)="addOrRemoveFromCart(dish)"></i>
+                    <i fxFlex="0 1 5%" class="fas fa-plus fa-xs" (click)="incQuantity(dish.cost, i)"></i>
+                    <i fxFlex="0 1 5%">{{ quantities[i] }}</i>
+                    <i fxFlex="0 1 5%" class="fas fa-minus fa-xs" (click)="decQuantity(dish.cost, i)"></i>
+                </div>
+                <div class="animate__animated animate__fadeIn animate__delay-2s">Subtotal: &nbsp; <span style="font-weight: 400;">{{ subtotal }}</span></div>
+                <div class="cart-btn animate__animated animate__fadeInLeft animate__delay-1s" *ngIf="!isCartEmpty">
+                    <a (click)="checkOut()">Checkout</a>
+                </div>
+                <div *ngIf="isCartEmpty">
+                    <h5>Cart is empty</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feedback-form">
+        <div *ngIf="!displayFeedbackForm" class="div-container cart-btn">
+            <a (click)="toggleFeedbackForm()">Leave a feedback</a>
+        </div>
+        <div *ngIf="displayFeedbackForm">
+            <div class="info-box add-form animate__animated animate__fadeIn animate__delay-1s" fxLayout="row wrap" fxLayoutAlign="flex-start flex-start">
+                <div class="div-container" fxFlex="0 1 100%">
+                    <h4>Leave us a feedback</h4>
+                </div>
+                <div fxFlex="0 1 100%">
+                    <form [formGroup]="registerForm">
+                        <div class="div-container" fxLayout="row wrap" fxLayoutAlign="center center">
+                            <div fxFlex="0 1 30%">Name</div>
+                            <input fxFlex="0 1 50%" type="text" formControlName="name"/>
+                        </div>
+                        <div class="div-container" fxLayout="row wrap" fxLayoutAlign="center center">
+                            <div fxFlex="0 1 30%">Comments</div>
+                            <textarea fxFlex="0 1 50%" name="post" id="post" cols="30" rows="10" formControlName="comments"></textarea>
+                        </div>
+                        <div class="div-container" fxLayout="row wrap" fxLayoutAlign="center center">
+                            <div fxFlex="0 1 30%">Rating</div>
+                            <input fxFlex="0 1 50%" type="number" formControlName="rating"/>
+                        </div>
+                    </form>
+                </div>
+                <div class="div-container" fxFlex="0 1 100%" style="text-align: center;">
+                    <button (click)="onSubmit(registerForm)">Submit Feedback</button>
+                </div>
+            </div>        
+        </div>
+    </div>
+</div>
+
+<!-- 
+    <i class="fas fa-plus" fxFlex="0 1 10%"></i><i fxFlex="0 1 10%" class="fas fa-minus"></i>
+ -->
