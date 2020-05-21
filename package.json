@@ -23,6 +23,7 @@
     "@angular/router": "~9.1.0",
     "angular-alert-module": "^2.0.3",
     "animate.css": "^4.1.0",
+    "firebase-tools": "^8.3.0",
     "pdfmake": "^0.1.65",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
