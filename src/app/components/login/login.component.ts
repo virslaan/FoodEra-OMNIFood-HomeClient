@@ -15,8 +15,6 @@ export class LoginComponent implements OnInit {
   isLoggedIn: boolean
   currentUser: any
   userdb: any = []
-  name: string;
-  password: string;
 
   constructor(private dataSharing: DataSharingService, private data: DataService, private router: Router) { }
 
@@ -59,31 +57,6 @@ export class LoginComponent implements OnInit {
         }
         alert('wrong password')
         return
-      }
-      else
-      {
-        if(this.name === 'Vipul') {
-          if(this.password === '1') {
-            this.isLoggedIn = true
-            this.currentUser = this.userdb[i]
-  
-            this.dataSharing.sendIsLoggedIn(this.isLoggedIn)
-            this.dataSharing.sendCurrentUser(this.currentUser)
-  
-            if(username === "admin") {
-              window.location.href='http://localhost:4401'
-              return
-            } else {
-              this.dataSharing.sendCurrentUser({ "username": username })
-              this.router.navigate(['/home'])
-              return
-            }
-          }
-          alert('wrong password')
-          return
-        }
-      }
-   
       }
     }
     alert('user not registered')
