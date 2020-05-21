@@ -6,7 +6,7 @@
     jobs:
       build:
         docker:
-        -image:'circle/node:12'
+        - image: 'circle/node:12'
       working_directory: ~/rep
 
         steps:
